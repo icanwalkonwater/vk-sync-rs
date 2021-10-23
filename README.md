@@ -6,7 +6,7 @@ vk-sync(-fork)
 
 Simplified Vulkan synchronization logic, written in rust.
 
-Forked off of the original [vk-sync](https://crates.io/crates/vk-sync) crate, which is currently unmaintained.
+Forked off of the original [vk-sync](https://crates.io/crates/vk-sync) crate which is currently unmaintained.
 
 - [Documentation](https://docs.rs/vk-sync-fork)
 - [Changelog](https://github.com/expenses/vk-sync-rs/blob/master/CHANGES.md)
