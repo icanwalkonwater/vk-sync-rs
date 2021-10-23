@@ -1,5 +1,10 @@
 # Changes
 
+## 0.2.0 (2021-10-21)
+
+* Forked off of the original crate.
+* Updated to ash 0.33.
+* Added several `AccessType`s for the `VK_KHR_ray_tracing_pipeline` and `VK_KHR_acceleration_structure` extensions.
 ## 0.1.6 (2019-07-14)
 
 * Removed inefficient Vec<AccessType> on barrier structs in favor of slice references.

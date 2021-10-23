@@ -1,16 +1,15 @@
-vk-sync
+vk-sync(-fork)
 ========
-
-[![vk-sync on travis-ci.com](https://travis-ci.com/gwihlidal/vk-sync-rs.svg?branch=master)](https://travis-ci.com/gwihlidal/vk-sync-rs)
-[![vk-sync on appveyor.com](https://ci.appveyor.com/api/projects/status/9so5ab02cqyba843/branch/master?svg=true)](https://ci.appveyor.com/project/gwihlidal/vk-sync-rs/branch/master)
-[![Latest version](https://img.shields.io/crates/v/vk-sync.svg)](https://crates.io/crates/vk-sync)
-[![Documentation](https://docs.rs/vk-sync/badge.svg)](https://docs.rs/vk-sync)
-[![](https://tokei.rs/b1/github/gwihlidal/vk-sync-rs)](https://github.com/gwihlidal/vk-sync-rs)
+[![Latest version](https://img.shields.io/crates/v/vk-sync-fork.svg)](https://crates.io/crates/vk-sync-fork)
+[![Documentation](https://docs.rs/vk-sync-fork/badge.svg)](https://docs.rs/vk-sync-fork)
+[![](https://tokei.rs/b1/github/expenses/vk-sync-rs)](https://github.com/expenses/vk-sync-rs)
 
 Simplified Vulkan synchronization logic, written in rust.
 
-- [Documentation](https://docs.rs/vk-sync)
-- [Release Notes](https://github.com/gwihlidal/vk-sync-rs/releases)
+Forked off of the original [vk-sync](https://crates.io/crates/vk-sync) crate, which is currently unmaintained.
+
+- [Documentation](https://docs.rs/vk-sync-fork)
+- [Changelog](https://github.com/expenses/vk-sync-rs/blob/master/CHANGES.md)
 
 ## Overview
 
@@ -42,13 +41,7 @@ Add this to your `Cargo.toml`:
 
 ```toml
 [dependencies]
-vk-sync = "0.1.6"
-```
-
-and this to your crate root:
-
-```rust
-extern crate vk_sync;
+vk-sync = { package = "vk-sync-fork", version = "0.2.0" }
 ```
 
 ## License
@@ -64,6 +57,8 @@ at your option.
 
 This library is heavily based on work by Tobias Hector (https://github.com/Tobski/simple_vulkan_synchronization) 
 
+As mentioned above, this library was orignally developed by Graham Wihlidal (https://github.com/gwihlidal/vk-sync-rs)
+
 ## Contribution
 
 Unless you explicitly state otherwise, any contribution intentionally submitted
@@ -72,6 +67,6 @@ be dual licensed as above, without any additional terms or conditions.
 
 ## Code of Conduct
 
-Contribution to the vk-sync crate is organized under the terms of the
+Contribution to the vk-sync-fork crate is organized under the terms of the
 Contributor Covenant, the maintainer of vk-sync, @gwihlidal, promises to
 intervene to uphold that code of conduct.
