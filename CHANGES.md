@@ -1,5 +1,9 @@
 # Changes
 
+## 0.2.1 (2021-10-21)
+
+* Changes the crate description to make it clearer in the crates browser that this crate is a fork.
+
 ## 0.2.0 (2021-10-21)
 
 * Forked off of the original crate.
