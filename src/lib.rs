@@ -470,12 +470,9 @@ pub fn get_image_memory_barrier(
 
         dst_stages |= next_info.stage_mask;
 
-        // Add visibility operations as necessary.
-        // If the src access mask, this is a WAR hazard (or for some reason a "RAR"),
-        // so the dst access mask can be safely zeroed as these don't need visibility.
-        if image_barrier.src_access_mask != vk::AccessFlags::empty() {
-            image_barrier.dst_access_mask |= next_info.access_mask;
-        }
+        // Add appropriate availability operations - in all cases beccause otherwise
+        // we get WAW and RAWs.
+        image_barrier.dst_access_mask |= next_info.access_mask;
 
         let layout = match barrier.next_layout {
             ImageLayout::General => {
