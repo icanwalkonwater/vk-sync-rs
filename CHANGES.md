@@ -1,5 +1,9 @@
 # Changes
 
+## 0.2.2  (2021-12-10)
+
+* Adds destination access marks to image barriers in all cases to avoid syncronisation hazards.
+
 ## 0.2.1 (2021-10-21)
 
 * Changes the crate description to make it clearer in the crates browser that this crate is a fork.
