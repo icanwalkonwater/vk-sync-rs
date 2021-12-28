@@ -1,5 +1,9 @@
 # Changes
 
+## 0.3.0 (2021-12-28)
+
+* Update to `ash` `0.35.0`.
+
 ## 0.2.2  (2021-12-10)
 
 * Adds destination access marks to image barriers in all cases to avoid syncronisation hazards.
